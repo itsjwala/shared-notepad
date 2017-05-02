@@ -1,0 +1,15 @@
+{
+  "name": "shared_notepad",
+  "version": "1.0.0",
+  "description": "shared notepad app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jigar wala",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
