@@ -1,7 +1,9 @@
 var socket;
 var notepad=document.querySelector('textarea');
+  
+// socket=io.connect('http://localhost:3000');
 
-socket=io.connect('http://localhost:3000');
+socket=io.connect('https://calm-plains-77269.herokuapp.com:'+location.port);
 
 notepad.onkeyup=function(){
   //give text to server
