@@ -12,5 +12,5 @@ notepad.onkeyup=function(){
 
 //on receiving data from server due to text event
  socket.on('text',(data)=>{
-notepad.value=data.gem;
+notepad.value=data.gem;a
  });
