@@ -10,7 +10,7 @@ const server=app.listen(process.env.PORT || 3000,()=>{
 const io=require('socket.io')(server) //pass server ;
 
 
-io.sockets.on('connection',(socket)=>{
+io.on('connection',(socket)=>{
  //on every new user connects   
  console.log("new user connected : "+socket.id);
    
@@ -18,10 +18,11 @@ io.sockets.on('connection',(socket)=>{
    socket.on('text',(data)=>{
          //cause text event to every  other sockets
          socket.broadcast.emit('text',data);
-
-   // io.sockets.emit('message',"this goes to everyone including sender")
-         ;
+         
+  //this goes to everyone including sender
+   // io.emit('message',"lol lol");
   });
+   
    socket.on('disconnect',()=>{
    console.log("User "+socket.id+ " disconnected");
     });
