@@ -20,7 +20,7 @@ io.on('connection',(socket)=>{
          socket.broadcast.emit('text',data);
          
   //this goes to everyone including sender
-   // io.emit('message',"lol lol");
+   // io.emit('message',"kewl app");
   });
    
    socket.on('disconnect',()=>{
